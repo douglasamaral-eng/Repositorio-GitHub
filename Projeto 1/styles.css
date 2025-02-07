@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #59110B;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 2s;
+    font-family: "Anton", serif;
+}
+
+li:hover {
+    color: rgb(255, 0, 0);
+}
+
+#logonova {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+#banner {
+    background-image: url("https://cdn.europosters.eu/image/hp/66923.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+#trailer-container {
+    width: 100px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 1000%;
+}
+
+#sinopse {
+    width: 2000%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: aliceblue;
+    font-size: 14px;
+    font-family: "Kdam+Thmor+Pro" sans-serif;
+    width: 150%;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    background-color: gold;
+    color: black;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: white;
+    color: red;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: aliceblue;
+    font-size: 17px;
+    font-family: "Kdam+Thmor+Pro" sans-serif;
+}
+
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+
+.banner-1 {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e9ddb5c3-233c-4aa8-aec8-e8a7faf9b7d9/dd8s2i6-44dfebe2-47eb-47f4-ab2b-cddd13662d63.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U5ZGRiNWMzLTIzM2MtNGFhOC1hZWM4LWU4YTdmYWY5YjdkOVwvZGQ4czJpNi00NGRmZWJlMi00N2ViLTQ3ZjQtYWIyYi1jZGRkMTM2NjJkNjMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.MXRNfp5RRR7ABSwbtOy02D-PeKC9wd0nwpdzgq6Yafg);
+}
+
+.banner-2 {
+    background-image: url(https://pbs.twimg.com/media/FMOk4EiXEAURgip.jpg);
+}
+
+.banner-3 {
+    background-image: url(https://cosmicbook.news/images1/jeffrey-wright-gordon-batman-fan-art-2.jpg);
+}
+
+.back-button{
+    width: 5%;
+    background-color: brown;
+    padding: 0%;
+}
+
+footer {
+    height: 100px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+span{
+    color: white;
+    font-family: 'Kdam+Thmor+Pro', sans-serif;
+    height: 80%;
+}
+
+.footer-navigation {
+    display: none;
+
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+
+}
+
