@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #59110B; /* Cor de fundo da página */
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 2s;
+    font-family: "Anton", serif;
+}
+
+li:hover {
+    color: rgb(255, 0, 0);
+}
+
+#logonova {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+.principal-1 {
+    width: 90%;
+    height: 300px;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+    display: flex;
+    column-gap: 100px;
+    row-gap: 100px;
+}
+
+.caixa {
+    margin-top: 20%;
+    margin-bottom: 50%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+    color: black; /* Cor do texto dentro da caixa */
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra mais suave */
+    font-size: 14px;
+    width: 80%;
+    height: 200px;
+    background-color: white; /* Cor de fundo da caixa */
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+.description1 {
+    color: black;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: -60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+footer {
+    height: 100px;
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+span{
+    color: white;
+    font-family: 'Kdam+Thmor+Pro', sans-serif;
+    height: 80%;
+}
+
+.footer-navigation {
+    display: none;
+
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .principal-1 {
+        margin-top: 150px;
+        grid-template-columns: 1fr;
+
+    }
+
+    .caixa {
+        margin-top: 150px;
+        grid-template-columns: 1fr;
+
+    }
+
+}
