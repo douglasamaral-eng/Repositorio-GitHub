@@ -1,4 +1,5 @@
 # Primeiro Projeto básico html,css
- Primeiro repositório
+ ...
+ Curso do Profissão Programador criando site, aplicando HTML e CSS básico.
 
 
